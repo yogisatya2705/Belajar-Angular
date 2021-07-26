@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodoAppsModule } from './module/todo-apps/todo-apps.module';
+import { TodoAppsFormControlModule } from './module/todo-apps-form-control/todo-apps-form-control.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TodoAppsModule } from './module/todo-apps/todo-apps.module';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    TodoAppsModule
+    TodoAppsModule,
+    TodoAppsFormControlModule
   ],
   providers: [],
   bootstrap: [AppComponent]

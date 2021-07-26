@@ -1,0 +1,25 @@
+<div class="container">
+  <form>
+    <mat-form-field>
+      <mat-placeholder>{{taskInpState === true ? "Tambah Task" : "Edit Task"}}</mat-placeholder>
+      <input matInput type="text" name="task" [(ngModel)]="formInputVal.task" required>
+      <button mat-button matSuffix mat-stroked-button aria-label="save" (click)="saveTask()">
+        <mat-icon>save</mat-icon>
+      </button>
+    </mat-form-field>
+  </form>
+
+
+  <mat-list>
+    <mat-list-item *ngFor="let item of listTodo; index as i">
+      <h3 mat-line>{{item}}</h3>
+      <button mat-icon-button>
+        <mat-icon class="mat-24" (click)="editTask(i)">edit</mat-icon>
+      </button>
+      <button mat-icon-button (click)="deleteTask(i)">
+        <mat-icon class="mat-24">delete</mat-icon>
+      </button>
+      <mat-divider></mat-divider>
+    </mat-list-item>
+  </mat-list>
+</div>

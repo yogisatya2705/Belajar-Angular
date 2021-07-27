@@ -1,9 +1,11 @@
-<!-- PIPE STRING -->
 <div style="margin:20px;padding:20px;border-bottom: 1px black solid;">
   <p><b>Default Value : </b>{{exampleString}}</p>
   <p><b>Uppercase Value : </b>{{exampleString | uppercase}}</p>
   <p><b>lowercase Value : </b>{{exampleString | lowercase}}</p>
   <p><b>titlecase Value : </b>{{exampleString | titlecase}}</p>
+  <p><b>slice :2:8 | uppercase Value : </b>{{exampleString | slice :2 | uppercase}}</p>
+  <p><b>slice :2:8 | uppercase Value : </b>{{exampleString | slice :2:8 | uppercase}}</p>
+  <p><b>slice :2:-1 | uppercase Value : </b>{{exampleString | slice :2:-1 | uppercase}}</p>
 </div>
 
 <div style="margin:20px;padding:20px;border-bottom: 1px black solid;">
@@ -11,4 +13,17 @@
   <p><b>date Value : </b>{{exampleDate | date}}</p>
   <p><b>date, long, uppercase Value : </b>{{exampleDate | date:'long' | uppercase}}</p>
   <p><b>date, dd-MM-yyyy Value : </b>{{exampleDate | date:"dd-MM-yyyy"}}</p>
+</div>
+
+<div style="margin:20px;padding:20px;border-bottom: 1px black solid;">
+  <p><b>Default Value : </b>{{exampleJson}}</p>
+  <p><b>json Value : </b>{{exampleJson | json}}</p>
+</div>
+
+<div style="margin:20px;padding:20px;border-bottom: 1px black solid;">
+  <!-- {minIntegerDigits}.{minFractionDigits}-{maxFractionDigits} -->
+  <p><b>Default Value : </b>{{exampleNumber}}</p>
+  <p><b>number:'4.0-5' Value : </b>{{exampleNumber | number:'4.0-5'}}</p>
+  <p><b>currency:'Rp. ' Value : </b>{{exampleNumber | currency:'Rp. ' }}</p>
+  <p><b>24 | luasPersegi : </b>{{24 | luasPersegi:3 }}</p>
 </div>

@@ -8,6 +8,7 @@ import { TodoAppsModule } from './module/todo-apps/todo-apps.module';
 import { TodoAppsFormControlModule } from './module/todo-apps-form-control/todo-apps-form-control.module';
 import { ParentChildModule } from './module/parent-child/parent-child.module';
 import { TwoWayBindingModule } from './module/two-way-binding/two-way-binding.module';
+import { PipeExampleModule } from './module/pipe-example/pipe-example.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TwoWayBindingModule } from './module/two-way-binding/two-way-binding.mo
     TodoAppsModule,
     TodoAppsFormControlModule,
     ParentChildModule,
-    TwoWayBindingModule
+    TwoWayBindingModule,
+    PipeExampleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,23 @@
+<div style="padding: 20px;flex: 1;">
+  <mat-card>
+    <mat-card-header style="justify-content: center;">
+      <mat-card-title>CHILD COMPONENT</mat-card-title>
+    </mat-card-header>
+
+    <mat-divider></mat-divider>
+
+    <mat-card-content style="text-align: center;margin-top: 16px;">
+      <h1>{{valCounter}}</h1>
+    </mat-card-content>
+
+
+    <mat-card-actions style="text-align: center;">
+      <button (click)="changeValueEmitter.emit(-1)" mat-mini-fab color="primary" style="margin-right: 10px;">
+        <mat-icon>remove</mat-icon>
+      </button>
+      <button (click)="changeValueEmitter.emit(1)" mat-mini-fab color="primary">
+        <mat-icon>add</mat-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>

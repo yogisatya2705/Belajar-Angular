@@ -1,0 +1,8 @@
+<form #exampleForm="ngForm" (ngSubmit)="submitExampleForm(exampleForm.value)">
+  <input ngModel type="text" name="username"><br><br>
+  <input ngModel type="email" name="email"><br><br>
+
+  <button type="submit">SUBMIT FORM</button>
+</form>
+
+<button (click)="submitExampleForm(exampleForm.value)">OUTSIDE FORM</button>

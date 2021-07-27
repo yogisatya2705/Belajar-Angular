@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TodoAppsModule } from './module/todo-apps/todo-apps.module';
 import { TodoAppsFormControlModule } from './module/todo-apps-form-control/todo-apps-form-control.module';
 import { ParentChildModule } from './module/parent-child/parent-child.module';
+import { TwoWayBindingModule } from './module/two-way-binding/two-way-binding.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ParentChildModule } from './module/parent-child/parent-child.module';
     BrowserAnimationsModule,
     TodoAppsModule,
     TodoAppsFormControlModule,
-    ParentChildModule
+    ParentChildModule,
+    TwoWayBindingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

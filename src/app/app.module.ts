@@ -10,10 +10,11 @@ import { ParentChildModule } from './module/parent-child/parent-child.module';
 import { TwoWayBindingModule } from './module/two-way-binding/two-way-binding.module';
 import { PipeExampleModule } from './module/pipe-example/pipe-example.module';
 import { FormExampleModule } from './module/form-example/form-example.module';
+import { UseDirectiveModule } from './module/use-directive/use-directive.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +25,8 @@ import { FormExampleModule } from './module/form-example/form-example.module';
     ParentChildModule,
     TwoWayBindingModule,
     PipeExampleModule,
-    FormExampleModule
+    FormExampleModule,
+    UseDirectiveModule
   ],
   providers: [],
   bootstrap: [AppComponent]

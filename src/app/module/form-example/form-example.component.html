@@ -1,8 +1,12 @@
 <form #exampleForm="ngForm" (ngSubmit)="submitExampleForm(exampleForm.value)">
-  <input ngModel type="text" name="username"><br><br>
+  <input #username="ngModel" ngModel required minlength="5" maxlength="15" type="text" name="username"><br>
+  <div *ngIf="username.touched && username.invalid" style="color: red;">
+    <p *ngIf="username.errors?.required">Required!</p>
+    <p *ngIf="username.errors?.minlength">Min length >= 5!</p>
+  </div> <br>
   <input ngModel type="email" name="email"><br><br>
 
   <button type="submit">SUBMIT FORM</button>
 </form>
 
-<button (click)="submitExampleForm(exampleForm.value)">OUTSIDE FORM</button>
+<button (click)="submitExampleForm(exampleForm)">OUTSIDE FORM</button>

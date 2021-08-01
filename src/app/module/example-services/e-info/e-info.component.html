@@ -1,0 +1,18 @@
+<form (ngSubmit)="addInfoToService(form)" #form="ngForm">
+  <input type="text" name="additional-info" ngModel>
+
+  <button type="submit">SAVE</button>
+</form>
+
+<ul>
+  <li *ngFor="let item of infoReceive1">{{item}}</li>
+</ul>
+<hr>
+<ul>
+  <li *ngFor="let item of infoReceive2">{{item}}</li>
+</ul>
+<hr>
+<ul>
+  <li *ngFor="let item of infoReceive3">{{item}}</li>
+</ul>
+<hr>

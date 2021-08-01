@@ -12,6 +12,7 @@ import { PipeExampleModule } from './module/pipe-example/pipe-example.module';
 import { FormExampleModule } from './module/form-example/form-example.module';
 import { UseDirectiveModule } from './module/use-directive/use-directive.module';
 import { DataBindingModule } from './module/data-binding/data-binding.module';
+import { ExampleServicesModule } from './module/example-services/example-services.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DataBindingModule } from './module/data-binding/data-binding.module';
     PipeExampleModule,
     FormExampleModule,
     UseDirectiveModule,
-    DataBindingModule
+    DataBindingModule,
+    ExampleServicesModule
   ],
   providers: [],
   bootstrap: [AppComponent]

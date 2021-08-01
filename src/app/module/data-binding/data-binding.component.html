@@ -1,0 +1,24 @@
+<!-- INTERPOLATION DATA BINDING (satu arah dari component ke view) -->
+<!-- {{ variable }} -->
+<h1>Halo, nama saya {{name}}</h1>
+<hr>
+
+<!-- PROPERTY DATA BINDING (satu arah dari component ke view) -->
+<!-- [property] = "variable atau fungsi" -->
+<h2 [style.color]="color">INI CONTOH PROPERTY BINDING</h2>
+<button [disabled]="isActive ? '' : 'disabled'">Hello</button>
+<hr>
+
+<!-- EVENT DATA BINDING (satu arah dari view ke component) -->
+<button (click)="exampleClick()">CONTOH EVENT BINDING</button>
+<hr>
+
+<!-- TWO WAY DATA BINDING (dua arah) -->
+<!--
+// DI MODULE
+import { FormsModule } from '@angular/forms';
+
+// DI VIEW
+[(ngModel)]="variable"
+-->
+<input type="text" [(ngModel)]="name">

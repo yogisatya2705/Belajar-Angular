@@ -11,6 +11,7 @@ import { TwoWayBindingModule } from './module/two-way-binding/two-way-binding.mo
 import { PipeExampleModule } from './module/pipe-example/pipe-example.module';
 import { FormExampleModule } from './module/form-example/form-example.module';
 import { UseDirectiveModule } from './module/use-directive/use-directive.module';
+import { DataBindingModule } from './module/data-binding/data-binding.module';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { UseDirectiveModule } from './module/use-directive/use-directive.module'
     TwoWayBindingModule,
     PipeExampleModule,
     FormExampleModule,
-    UseDirectiveModule
+    UseDirectiveModule,
+    DataBindingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

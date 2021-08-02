@@ -13,6 +13,7 @@ import { FormExampleModule } from './module/form-example/form-example.module';
 import { UseDirectiveModule } from './module/use-directive/use-directive.module';
 import { DataBindingModule } from './module/data-binding/data-binding.module';
 import { ExampleServicesModule } from './module/example-services/example-services.module';
+import { DependencyInjectionModule } from './module/dependency-injection/dependency-injection.module';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ExampleServicesModule } from './module/example-services/example-service
     FormExampleModule,
     UseDirectiveModule,
     DataBindingModule,
-    ExampleServicesModule
+    ExampleServicesModule,
+    DependencyInjectionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

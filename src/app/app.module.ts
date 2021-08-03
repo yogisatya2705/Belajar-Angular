@@ -14,10 +14,17 @@ import { UseDirectiveModule } from './module/use-directive/use-directive.module'
 import { DataBindingModule } from './module/data-binding/data-binding.module';
 import { ExampleServicesModule } from './module/example-services/example-services.module';
 import { DependencyInjectionModule } from './module/dependency-injection/dependency-injection.module';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +39,12 @@ import { DependencyInjectionModule } from './module/dependency-injection/depende
     UseDirectiveModule,
     DataBindingModule,
     ExampleServicesModule,
-    DependencyInjectionModule
+    DependencyInjectionModule,
+
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

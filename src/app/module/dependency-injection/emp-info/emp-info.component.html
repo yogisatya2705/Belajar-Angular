@@ -1,1 +1,13 @@
-<p>emp-info works!</p>
+<div *ngFor="let info of infoReceived">
+  <ul>
+    <!-- <li *ngFor="let item of info; keyvalue">
+      {{ item.key | titlecase }} : {{ item.value }}
+    </li> -->
+
+    <li>{{info.id}}</li>
+    <li>{{info.name}}</li>
+    <li>{{info.email}}</li>
+    <li>{{info.address}}</li>
+  </ul>
+  <hr>
+</div>
